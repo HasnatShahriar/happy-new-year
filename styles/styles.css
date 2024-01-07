@@ -1,0 +1,27 @@
+Common shared styles
+body {
+  font-family: 'Merriweather', serif;
+}
+
+/* Banner related styles */
+.banner {
+  background-image: url("../images/Banner.png");
+  width: 1320px;
+  height: 600px;
+}
+
+.banner-sub-title {
+  /* color: #FFF; */
+  text-align: center;
+  font-size: 32px;
+  font-weight: 400;
+  padding: 177px 531px 0px 530px;
+}
+
+.banner-title {
+  /* color: #FFF; */
+  text-align: center;
+  font-size: 72px;
+  font-weight: 900;
+ 
+}
