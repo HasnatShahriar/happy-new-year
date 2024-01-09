@@ -1,7 +1,46 @@
 /* Common shared styles */
 body {
+  margin: 0 auto;
   font-family: 'Merriweather', serif;
 }
+
+.section-title {
+  color: #F00;
+  font-family: Inter;
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 16px;
+}
+
+.section-sub-title {
+  color: #070211;
+  font-family: Merriweather;
+  font-size: 48px;
+  font-weight: 900;
+  text-transform: capitalize;
+  margin-bottom: 22px;
+}
+
+.section-description {
+  color: rgba(7, 2, 17, 0.60);
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.btn-primary {
+  background-color: #F00;
+  padding: 5px 25px;
+  color: #FFF;
+  text-align: center;
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  border-radius: 8px;
+}
+
+
 
 /* Banner related styles */
 .banner {
@@ -78,8 +117,9 @@ body {
 }
 
 .mid-party {
-  width: 50%;
-  padding: 120px 120px 400px;
+  width: 60%;
+  margin: 100px 10px 400px;
+  padding: 50px 0 0 50px;
 }
 
 .party-title {
@@ -101,17 +141,7 @@ body {
   line-height: 30px;
 }
 
-.btn-primary {
-  background-color: #F00;
-  padding: 5px 25px;
-  color: #FFF;
-  text-align: center;
-  font-family: Inter;
-  font-size: 20px;
-  font-weight: 700;
-  text-transform: uppercase;
-  border-radius: 8px;
-}
+
 
 /* join part related styles */
 .join {
@@ -119,13 +149,11 @@ body {
   background-color: #dec8c8;
   background: linear-gradient(180deg, rgba(255, 0, 0, 0.10) 0%, rgba(255, 0, 0, 0.00) 100%);
   border-radius: 15px;
-  /* height: 100vh; */
   text-align: center;
   padding: 100px 100px 0px 100px;
 }
 
 .join-info {
-  /* text-align: center; */
   color: #070211;
   text-align: center;
   font-family: Inter;
@@ -139,12 +167,14 @@ body {
   color: red;
 }
 
-.up-going-section {
+.offer-section {
   margin: 0 100px 0 100px;
   padding: 50px;
 }
 
-.up-going {
+/* Offer part styles */
+
+.offer-part {
   display: flex;
   margin-top: 220px;
   justify-content: space-between;
@@ -152,30 +182,28 @@ body {
   align-content: center;
 }
 
-.up-going-info {
+.offer-info {
   padding-right: 40px;
 }
 
-.up-going-image {
+.offer-image {
   width: 50%;
   border-radius: 50%;
   position: relative;
-  /* width: 100px;
-  height: 100px; */
   border: 15px solid #F00;
   pointer-events: none;
   object-fit: cover;
   padding: 5px;
 }
 
-.up-going-more-info {
+.offer-more-info {
   padding-left: 40px;
 }
 
 /* holidays related styles */
 .holiday-info {
-text-align: center;
-margin-top: 120px;
+  text-align: center;
+  margin: 120px 100px 0 100px;
 }
 
 .holiday-title {
@@ -211,7 +239,7 @@ margin-top: 120px;
 .holiday-image {
   margin-top: 120px;
   height: 100vh;
-  background: url("../images/Group\ 75.png")no-repeat, url("../images/Group\ 44.png") no-repeat 75% 30%, url("../images/Rectangle\ 1.png") no-repeat 97% 0%/340px 384px, url("../images/Rectangle\ 2.png") no-repeat bottom;
+  background: url("../images/Group\ 75.png")no-repeat 10% 50% /550px 540px, url("../images/Group\ 44.png") no-repeat 75% 20%, url("../images/Rectangle\ 1.png") no-repeat 100% 0%/340px 323px, url("../images/Rectangle\ 2.png") no-repeat bottom;
 }
 
 /* gifts related styles */
@@ -223,32 +251,23 @@ margin-top: 120px;
   width: 70%;
 }
 
-.gift-title {
-  color: #F00;
-  font-family: Inter;
-  font-size: 24px;
-  font-weight: 500;
-  margin-bottom: 16px;
+.column {
+  float: left;
+  width: 30%;
+  padding: 10px;
 }
 
-.gift-sub-title {
-  color: #070211;
-  font-family: Merriweather;
-  font-size: 48px;
-  font-weight: 900;
-  text-transform: capitalize;
-  margin-bottom: 22px;
+.column img {
+  height: 350px;
 }
 
-.gift-description {}
-
-.image {
-  max-width: 100%;
+.column:hover {
+  background-color: green;
 }
 
 /* subscribe part styles  */
 .subscribe {
-  margin: 120px 100px 0 100px;
+  margin: 900px 100px 0 100px;
   border-radius: 16px;
   background: rgba(255, 0, 0, 0.05);
   height: 100vh;
@@ -311,21 +330,21 @@ footer {
 .contact {
   display: flex;
   gap: 200px;
-  padding: 120px 180px 0 140px;
+  padding: 80px 180px 0 140px;
 
 }
 
 .location {
   color: #FFF;
   font-family: Inter;
-  font-size: 24px;
+  font-size: 18px;
   font-weight: 500;
 }
 
 .number {
   color: #FFF;
   font-family: Inter;
-  font-size: 24px;
+  font-size: 16px;
   font-weight: 500;
   display: block;
 }
@@ -335,16 +354,20 @@ hr {
   width: 87%;
 }
 
-.footer-image {
+.footer-images {
   margin: 50px;
   display: flex;
   justify-content: center;
 }
 
+.footer-image {
+  padding: 10px;
+}
+
 .copyright {
   display: flex;
   justify-content: space-between;
-  margin: 50px 200px;
+  margin: 80px 200px;
 }
 
 .copyright p {
